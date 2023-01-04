@@ -155,7 +155,7 @@ Salida (return):
 ### Funcion "validar_palabra"
 Encabezado de la función:
 ```python
-def validar_palabra(letras_usadas, palabra_secreta):
+ 
 ```
 
 Entrada (argumentos):
