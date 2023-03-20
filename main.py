@@ -39,12 +39,12 @@ def verificar_letra(letra, palabra_secreta):
         return False
 
 def validar_palabra(letras_usadas, palabra_secreta):
-    for i in range(len(palabra_secreta)):
-        if palabra_secreta[i] in letras_usadas:
-            return True
-        elif palabra_secreta[i] not in letras_usadas:
+    for i in palabra_secreta:
+        if i in letras_usadas:
+            continue
+        elif i not in letras_usadas:
             return False
-        break
+    return True
 
 if __name__ == "__main__":
     print("\n¡Aquí comienza el juego del ahorcado!\n")
